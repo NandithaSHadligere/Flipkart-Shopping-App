@@ -7,7 +7,7 @@ const Connection = async () => {
     const USERNAME = process.env.MONGO_USERNAME;
     const PASSWORD = process.env.MONGO_PASSWORD;
     
-    const URL = 'mongodb+srv://nanditha032002:Nandu987@flipkart-database.pofu3.mongodb.net/Flipkart-database?retryWrites=true&w=majority';
+    const URL = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/your-db-name?retryWrites=true&w=majority';
 
     try {
         await mongoose.connect(URL, {
